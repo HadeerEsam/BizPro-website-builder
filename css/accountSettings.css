@@ -1,0 +1,167 @@
+body 
+{
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    background-color: white;
+    /* overflow: hidden; */
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2222222;
+}
+.navbar-dark .navbar-nav .nav-link 
+{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+header .border-right 
+{
+    border-right: 1px solid rgba(255,255,255,.5)!important;
+}
+
+ul.navbar-nav li a:hover 
+{
+    color:#d73e4d !important;
+}
+
+.setting-options{
+    display: none;
+}
+/* *************************************    Account Settings ********************************** */
+.frame{
+    width: 90%;
+    margin: auto;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.block{
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(39, 39, 39, 0.459);
+}
+
+.input-border{
+    border: 1px solid #d73e4d;
+}
+.input-border:focus{
+    box-shadow:0 0 0 0.2rem rgba(215, 62, 77, 0.329);
+    border-color: #d73e4d;
+}
+.btn-save{
+    background-color: #d73e4d;
+    color: white;
+    font-weight: 600;
+    border: 2px #d73e4d solid;
+}
+.btn-save:hover{
+    color: #d73e4d;
+    background-color: white;
+}
+
+/* ****************************mailbox section ************************************** */
+#mailBox img{
+    width: 100px;
+}
+#mailBox ul{
+    list-style: none;
+    padding-inline-start:5px
+}
+.mail-title{
+    font-size: 1.6rem;
+}
+
+/*  **************************** hire section ***************** */
+#hire .hirebtn{
+    color: #d73e4d;
+    font-weight: 600;
+}
+#hire .hirebtn:hover{
+    text-decoration: none;
+    color: #f54f60;
+}
+#hire img{
+    width: 50%;
+}
+/* *********************** tablet ******************************* */
+@media screen and (min-width:768px){
+
+
+/* setting menu*/
+.setting-options{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index:1000 ;
+    width: 160px;
+    background-color: white;
+    box-shadow: 1px 1px 15px rgba(39, 39, 39, 0.459);
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+.setting-options li{
+    padding: 0.3rem 1rem;
+}
+.setting-options .nav-link{
+    color: #555555;
+    font-weight: 600;
+}
+.setting-options li:hover{
+    background-color: #d73e4d25;
+}
+.brd{
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    background-color: silver;
+}
+
+.main-settings{
+    margin-left: 9rem;
+}
+.frame{
+    width: 85%;
+    margin:auto
+}
+.mail-title{
+    font-size: 1.8rem;
+}
+#hire,#mailBox{
+    display: none;
+}
+}
+
+/* *********************** desktop******************************* */
+@media screen and (min-width:992px){
+
+    .setting-options{
+        width: 220px;
+    }
+    .main-settings{
+        margin-left: 13rem;
+    }
+    .frame{
+        width: 85%;
+        margin:auto
+    }
+    #mailBox img{
+        width: 130px;
+    }
+    #hire img{
+        width: 25%;
+    }
+    #hire,#mailBox{
+        display: none;
+    }
+    }

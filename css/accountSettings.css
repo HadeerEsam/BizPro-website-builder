@@ -126,7 +126,9 @@ ul.navbar-nav li a:hover
     height: 1px;
     background-color: silver;
 }
-
+#userEmail{
+    font-size: 10px;
+}
 .main-settings{
     margin-left: 9rem;
 }
@@ -150,6 +152,9 @@ ul.navbar-nav li a:hover
     }
     .main-settings{
         margin-left: 13rem;
+    }
+    #userEmail{
+        font-size: 14px;
     }
     .frame{
         width: 85%;

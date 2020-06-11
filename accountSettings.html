@@ -57,7 +57,7 @@
   <section class="setting-options mt-5 py-5 ">
       <div class="account-name  text-center p-2 mb-5">
           <img src="images/Prime Perspective - Prime Account.png" class="w-50" alt="">
-          <h4 id="userName">userName</h4>
+          <h4 id="Name">userName</h4>
           <p id="userEmail">Email</p>
       </div>
 
@@ -82,27 +82,27 @@
                       <form action="" class=" ">                     
 
                          <div class="form-group d-flex flex-wrap py-4 mb-0 border-bottom">
-                             <label for="userName" class="col-sm-3 col-form-label">User Name</label>
+                             <label for="userName-settings" class="col-sm-3 col-form-label">User Name</label>
                              <div class="col-sm-8 offset-sm-1">
-                               <input type="text" class="form-control input-border" id="userName" placeholder="Enter your account name.">
+                               <input type="text" class="form-control input-border" id="userName-settings" placeholder="Enter your account name.">
                              </div>
                           </div>
 
                           <div class="form-group d-flex flex-wrap py-4 mb-0 border-bottom">
-                            <label for="email" class="col-sm-3 col-form-label">Email</label>
+                            <label for="email-settings" class="col-sm-3 col-form-label">Email</label>
                             <div class="col-sm-8 offset-sm-1">
-                              <input type="email" class="form-control input-border" id="email" placeholder="Enter your email.">
+                              <input type="email" class="form-control input-border" id="email-settings" placeholder="Enter your email.">
                             </div>
                          </div>
 
                          <div class="form-group d-flex flex-wrap py-4 mb-3 ">
-                            <label for="password" class="col-sm-3 col-form-label">Password</label>
+                            <label for="password-settings" class="col-sm-3 col-form-label">Password</label>
                             <div class="col-sm-8 offset-sm-1">
-                              <input type="password" class="form-control input-border" id="password" placeholder="Enter your password.">
+                              <input type="password" class="form-control input-border" id="password-settings" placeholder="Enter your password.">
                             </div>
                          </div>
 
-                         <button class="btn btn-save float-right mr-3 px-5 py-2 mb-4">Save</button>
+                         <button id="updateBtn" class="btn btn-save float-right mr-3 px-5 py-2 mb-4">Save</button>
 
                      </form>
                  </div>
@@ -159,9 +159,11 @@
   
  
   
+     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/accountSettings.js"></script>
+    <script  src="js/animation.js"></script>
+    <script src="js/loginInfo.js"></script>
 </body>
 </html>

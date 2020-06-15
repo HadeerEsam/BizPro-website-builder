@@ -1,37 +1,4 @@
-// ///////////////// sidebar templates //////////////////
 $(document).ready(function(){
-    $("#firstTemplate").click(function(){
-        $('iframe').attr('src', "jumbotron.html")
-
-    });
-
-    ///////   landing page    //////
-    $(".active-page").click(function(){
-        $('iframe').attr('src', "template.html")
-    });
-
-    // ////   albums page ///////
-    $("#album-template").click(function(){
-        $('iframe').attr('src', "content.html");
-    });  
-
-    ///////  E-commerce(pricing) template
-    $("#pricing-template").click(function(){
-        $('iframe').attr('src', "pricing template.html");
-    });  
-
-
-    // scroll to top
-    $("#btnUp").click(function(){
-
-        $("html,body").animate({scrollTop:"0"} , 2000);
-    })
-});
-
-
-
-
-
 //toggle of tools taps
 $("#rightNav .nav-link").click(function () { 
     $(this).addClass("active-option");
@@ -86,13 +53,13 @@ $("#rightNav .nav-link").click(function () {
          }
     }else{
         if( $("#rightNav").css("right")=="0px"){
-            $("#main-section").css({"right":"0","width":"auto"});
-            $("#rightNav").css("right","-20%");
+            $("#main-section").css({"left":"0","width":"auto"});
+            $("#left-side").css("left","-20%");
             
          }else{
             
-            $("#rightNav").css("right","0");
-            $("#main-section").css({"right":"20%","width":"auto"});
+            $("#left-side").css("left","0");
+            $("#main-section").css({"left":"20%","width":"auto"});
          }
 
     }
@@ -171,3 +138,79 @@ $("#fullscreen").click(function(){
 });
 
 
+// ///////////////// sidebar templates //////////////////
+
+    $("#firstTemplate").click(function(){
+      $('iframe').attr('src', "jumbotron.html")
+    
+    });
+
+    ///////   landing page    //////
+    $(".landing").click(function(){
+        $('iframe').attr('src', "template.html")
+    });
+
+    // ////   albums page ///////
+    $("#album-template").click(function(){
+        $('iframe').attr('src', "content.html");
+    });  
+
+    ///////  E-commerce(pricing) template
+    $("#pricing-template").click(function(){
+        $('iframe').attr('src', "pricing template.html");
+    });  
+
+
+    // scroll to top
+    $("#btnUp").click(function(){
+   
+        $("html,body").animate({scrollTop:"0"} , 2000);
+    });
+
+   
+    $(".items a").click(function(){
+        $(this).addClass("active-page");
+        $(".items a").not($(this)).removeClass("active-page");
+
+    });
+    
+       
+        // $("#ifrm").ready(function(){
+        //     let ifrm = document.getElementById('ifrm');
+        //         console.log(ifrm)
+        //         let win = ifrm.contentWindow; 
+        //     // reference to iframe's window
+        //     // reference to document in iframe
+        //     let doc = ifrm.contentDocument? ifrm.contentDocument: ifrm.contentWindow.document;
+        //    $("p").click(function(){
+        //     $("#contentTap").html(`
+        //     <div class="text-align">
+        //     <div><i class="fas fa-align-left"></i></div>
+        //     <div><i class="fas fa-align-justify"></i></div>
+        //     <div><i class="fas fa-align-right"></i></div>
+        //     </div>
+        //     <div></div>
+        //     `);    
+        //    });    
+        // });
+        
+        // doc.innerHTML.addEventListner("click",function(){
+        //     $(this).css("border","1px solid #d73e4d");
+        //     $("p").not($(this)).css("border","none");
+        // // $(this).contents().find('body').html('Hey, I have changed the body content yay!');
+
+    
+            
+        // });
+
+        // $("iframe .nav-link").click(function(){
+        //     window.alert("sd")
+
+        // });
+    });
+    
+
+
+
+
+  

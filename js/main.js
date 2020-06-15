@@ -58,20 +58,6 @@ $(window).scroll(function () {
 
 
 
-// end of welcome page
-
-
-
-
-
-
-
-
-
-
-
-// start of login page code
-
 $("#login").click(function(){
 
 
@@ -99,12 +85,12 @@ $("#login").click(function(){
 
         if(users[indexOfRight].userPassword == $("#password-input").val() &&  $("#password-input").val() != ""){
 
-            // password is right and user name is right
+            // password is right and username is right
 
             //hide wrong password paragraph if appeared
             $("#wrong-password").css("display" , "none");
 
-           
+           $("#login-link").attr("href" , "mySites.html");
             console.log("go to mysite page");
 
             //saving username to show it later
@@ -172,7 +158,7 @@ $("#signup-btn").click(function () {
 
             localStorage.setItem("currentUserName" , `${$("#username").val()}`);
 
-  
+            $("#sign-up").attr("href" , "mySites.html");
             console.log("go to mysite page");
 
 

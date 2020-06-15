@@ -1,0 +1,211 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    animation: fade 1s ease-in both;
+    overflow-x: hidden;
+}
+@keyframes fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    font-weight: 700;
+}
+
+.title .btn , .build .btn , .stunning-templates .btn , .drag-drop .btn , .mobile .btn{ 
+    box-shadow: 0px 1px 8px hsla(192, 100%, 9%, 0.295);
+    border-color: rgba(215,62,77,0.7) !important;
+    color:white !important;
+    background-color: #d73e4d !important;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+
+}
+
+
+.build .btn:hover , .drag-drop .btn:hover , .stunning-templates .btn:hover , .mobile .btn:hover ,.title .btn:hover  {
+    background-color:white !important;
+    color: rgba(215,62,77,0.7) !important;
+}
+
+
+.title .btn:active, .build .btn:active , .stunning-templates .btn:active , .drag-drop .btn:active , .mobile .btn:active{
+    border-color: rgba(215,62,77,0.7) !important;
+    background-color: #d73e4d !important;
+    color: white !important;
+    box-shadow: 0px 1px 8px hsla(192, 100%, 9%, 0.295);
+
+}
+
+.title h1{
+    font-weight: bold;
+}
+
+
+.social h2{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+/* --------------------------wavy background of sections----------------- */
+
+.stunning-templates,.mobile{
+    position: relative;
+    z-index: 1;
+    background-color: #f7d8db;
+}
+.stunning-templates::before{
+    content: "";
+    background-image: url(../images/top.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 56%;
+    z-index: -1;
+}
+.stunning-templates::after {
+    content: " ";
+    background-image: url(../images/bottom.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:52%;
+    z-index: -1;
+}
+
+
+.mobile::before{
+    content: "";
+    background-image: url(../images/top.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 56%;
+    z-index: -1;
+
+}
+.mobile::after{
+
+    content: " ";
+    background-image: url(../images/bottom.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:56%;
+    z-index: -1;
+}
+.build , .drag-drop , .title{
+    z-index: 2;
+    position: relative;
+}
+
+
+
+
+/* ----------------desktop wavy section background design----------------------- */
+
+@media screen and (min-width:768px){
+    
+    .stunning-templates::before{
+        content: "";
+        background-image: url(../images/top.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 71%;
+        z-index: -1;
+    }
+    .stunning-templates::after {
+        content: " ";
+        background-image: url(../images/bottom.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:64%;
+        z-index: -1;
+    }
+    
+    
+    .mobile::before{
+        content: "";
+        background-image: url(../images/top.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 72%;
+        z-index: -1;
+    
+    }
+    .mobile::after{
+    
+        content: " ";
+        background-image: url(../images/bottom.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:65%;
+        z-index: -1;
+    }
+}
+
+
+.stunning-templates h3 , .stunning-templates p , .stunning-templates a , .mobile h3 ,.mobile p , .mobile a
+{
+    margin-left: -1000px;
+    width: inherit;
+}
+.stunning-templates img , .drag-drop img , .mobile img
+{
+    display: none;
+    width: inherit;
+    height: fit-content;
+}
+
+.drag-drop h3 , .drag-drop p , .drag-drop a
+{
+    margin-left: 1000px;
+    width: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

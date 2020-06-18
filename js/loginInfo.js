@@ -206,6 +206,9 @@ $("#updateBtn").click(function () {
     users[enteredUser].userPassword=$("#password-settings").val();
     localStorage.setItem("users" , JSON.stringify(users));
 });
+
+
+
 //end of account setting page
 
 

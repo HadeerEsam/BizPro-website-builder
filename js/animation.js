@@ -7,6 +7,8 @@ $(".menue .nav-link").click(function () {
     activeSection=href;
     $(href).fadeIn(700);
     $(href).siblings().css("display","none");
+    $(this).addClass("active");
+    $(".menue .nav-link").not($(this)).removeClass("active");;
 });
 
 //show section according to size of browser

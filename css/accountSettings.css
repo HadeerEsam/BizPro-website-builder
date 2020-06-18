@@ -94,6 +94,11 @@ body
     color: #555555;
     font-weight: 600;
 }
+.setting-options .active 
+{
+    color:#d73e4d;
+}
+
 .setting-options li:hover{
     background-color: #d73e4d25;
 }

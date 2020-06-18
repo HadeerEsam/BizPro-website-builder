@@ -4,7 +4,7 @@ $(".designer").click(function(){
     $("#showcase").css("display" , "block");
     $(".designer>p").addClass("active");
     $(".websites>p").removeClass("active");
-})
+});
 
 $(".websites").click(function(){
 
@@ -13,4 +13,4 @@ $(".websites").click(function(){
     $(".websites>p").addClass("active");
     $(".designer>p").removeClass("active");
 
-})
+});

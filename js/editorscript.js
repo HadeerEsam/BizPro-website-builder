@@ -78,16 +78,16 @@ $("#tablet").click(function(){
 $("#computer").click(function(){
     if($("#left-side").css("left")=="0px"){
         if($("#rightNav").css("right")=="0px"){
-            $("#main-section").css({"right":"20%","left":"20%","width":"60%"});
+            $("#main-section").css({"right":"20%","left":"20%","width":"auto"});
         }else{
-            $("#main-section").css({"right":"0","width":"80%"});
+            $("#main-section").css({"right":"0","width":"auto"});
         }
     }else{
         if($("#rightNav").css("right")=="0px"){
-            $("#main-section").css({"left":"0","width":"80%"});
+            $("#main-section").css({"left":"0","width":"auto"});
             $("#main-section").css();
         }else{
-            $("#main-section").css({"right":"0","left":"0","width":"100%"});
+            $("#main-section").css({"right":"0","left":"0","width":"auto"});
         }
     }
 });

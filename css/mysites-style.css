@@ -28,6 +28,7 @@ a
 {
     color: #333;
     text-decoration: none;
+    transition: all .5s;
 }
 
 h3
@@ -44,8 +45,6 @@ h3
 }
 
  
-
-
 
 /* ********************* Inspiring Websites ********************** */
 
@@ -70,27 +69,31 @@ h3
 {
     background-color:white;
 }
+
 .img-container
 {
     position: relative;
     overflow: hidden;
+   
 }
-
-.img-container:hover .img-overlay
-{
-    opacity: 1;
-    visibility: visible;
-}
-
 .img-overlay{
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.4);
     opacity: 0;
     visibility: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: 20%;
     transition: all 0.7s;
+}
+.img-container img
+{
+   transition: transform 0.7s;
+}
+
+.img-container:hover img
+{
+   transform: scale(1.1);
 }
 
 
@@ -117,11 +120,34 @@ h3
 /* ****************************** professinal *********************** */
 
 
-#hire-prof .img-overlay
+#hire-prof .img-container .img-caption
 {
-    background-color:rgba(0,0,0,0.7);
+    background-color:rgba(0,0,0,0.9);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 0;
+    transition: all 0.7s;
+    z-index: 3;
 }
-
+#hire-prof .img-container:hover .img-caption
+{
+    opacity: 1;
+    visibility: visible;
+    color: #d73e4d;
+    top: 0;
+}
+#hire-prof .img-container .img-caption .icons
+{
+    padding-bottom: 11rem;
+}
+#hire-prof .img-container .img-caption .icons i
+{
+   font-size: 1.5rem;
+} 
 
 
 

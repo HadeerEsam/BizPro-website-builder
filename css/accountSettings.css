@@ -44,6 +44,9 @@ body
     color: #d73e4d;
     background-color: white;
 }
+.btn-save:focus{
+    box-shadow:0 0 0 0.2rem rgba(215, 62, 77, 0.25);
+}
 
 /* ****************************mailbox section ************************************** */
 #mailBox img{

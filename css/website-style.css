@@ -1,0 +1,82 @@
+
+.master-head{
+    position:relative;
+    /* background-color:#343a40; */
+    background-image :url("../images/bg-masthead.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* height: 100vh; */
+  
+}
+.master-head .overlay{
+    background-color:#21252963;
+    height: 100%;
+}
+.master-head h1{
+    font-size:2rem
+}
+
+.showcase .showcase-img{
+    min-height:30rem;
+    background-size:cover
+}
+
+
+/* icons */
+.icons{
+    padding-top:7rem;
+    padding-bottom:7rem;
+}
+.icons .icons-item{
+    max-width:20rem
+}
+.icons .icons-item .icons-icon{
+    height:7rem
+}
+.icons .icons-item .icons-icon i{
+    font-size:4.5rem
+}
+.icons .icons-item:hover .icons-icon i{
+    font-size:5rem
+}
+.testimonials{
+   padding-top:7rem;
+   padding-bottom:7rem;
+}
+.testimonials .testimonial-item{
+    max-width:12rem;
+}
+.testimonials .testimonial-item img{
+    max-width:12rem;
+   -webkit-box-shadow:0 5px 5px 0 #adb5bd;
+   box-shadow:0 5px 5px 0 #adb5bd ;
+}
+.call-to-action
+{
+  position:relative;
+  background-color:#343a40;
+  background-image:url("../images/bg-masthead.jpg") no-repeat center center ;
+  background-size:cover;
+  padding-top:7rem;
+  padding-bottom:7rem;
+}
+
+.call-to-action .overlay{
+  position:absolute;
+  background-color:#212529;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  opacity:0.3;
+}
+
+.footer{
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+
+.ct-widget.ct-inspector {
+    background: rgb(196, 195, 195);
+    height: 38px;
+}

@@ -1,0 +1,71 @@
+
+      .primary_color{
+        color:#007bff !important;
+      }
+      .success_color{
+        color: #28a745 !important;
+      }
+      .danger_color{
+        color: #dc3545 !important;
+      }
+      .warning_color{
+        color: #ffc107 !important;
+      }
+      .muted_color{
+        color: #6c757d !important;
+      }
+      .info_color{
+        color:#17a2b8 !important;
+      }
+      .light_color{
+        color: #f8f9fa !important;
+      }
+      .dark_color{
+        color: black !important;
+      }
+      .white_color{
+        color: white !important;
+      }
+      .bg_primary{
+        background-color:#007bff !important;
+      }
+      .bg_success{
+        background-color: #28a745 !important;
+      }
+      .bg_danger{
+        background-color: #dc3545 !important;
+      }
+      .bg_warning{
+        background-color: #ffc107 !important;
+      }
+      .bg_light{
+        background-color: #f8f9fa !important;
+      }
+      .bg_muted{
+        background-color: #6c757d !important;
+      }
+      .bg_info{
+        background-color:#17a2b8 !important;
+      }
+      .bg_dark{
+        background-color: black !important;
+      }
+      .bg_white{
+        background-color: white !important;
+      }
+      .font_sm{
+        font-size: 0.5rem !important;
+      }
+      .font_md{
+        font-size: 1rem !important;
+      }
+      .font_lg{
+        font-size: 1.5rem !important;
+      }
+      .font_xlg{
+        font-size: 3rem !important;
+      }
+      
+      
+      
+      

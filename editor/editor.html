@@ -1,0 +1,185 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="56x56" href="../images/icon.png">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/fontawesome.min.css">
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="../css/editor style.css">
+        <title>Editor</title>
+
+    </head>
+    <body>
+    <!-- nav bar -->
+        <section id="nav" >
+            <nav class="py-1 header navbar navbar-expand-md navbar-light bg-light border-bottom">
+              <a class="navbar-brand" href="mySites.html"><img src="../images/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a id="fullscreen" class="nav-link" href="#"><img src="../images/icons8-toggle-full-screen-26.png" alt="">
+                        <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="hideLeftNav" class="nav-link " href="#"><img src="../images/icons8-switch-on-32 (3).png" alt=""></a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="hideRightNav" class="nav-link" href="#"><img src="../images/icons8-switch-on-32 (2).png" alt=""></a>
+        
+                </ul>
+                
+                <ul class="navbar-nav ml-auto pr-5">
+                  <li class="nav-item active">
+                    <a id="mobile" class="nav-link" href="#"><img src="../images/icons8-android-24.png" alt=""><span
+                        class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="tablet" class="nav-link" href="#"><img src="../images/icons8-windows8-tablet-24.png" alt=""></a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="computer" class="nav-link" href="#"><img src="../images/icons8-computer-24.png" alt=""></a>
+                  </li>
+                </ul>
+                
+              </div>
+            </nav>
+        </section>
+        
+        <!-- left sidebar -->
+        <section id="left-side" >
+            <div class="box-side">
+                <div class="head">
+                    <a href="#" class="link-text">pages</a>
+                    <div class="btn-item float-right mr-2">
+                        <a href="#" class="btn  btn-sm pt-1">
+                            <i class="far fa-file"></i>
+                            <small>New page</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="items">
+                    <ol>
+                        <li class="mb-3">
+                            <a href="#" id="firstTemplate" > 
+                                 <i class="far fa-file"></i>
+                                Jumbotron                               
+                            </a>
+                            
+                        </li>
+                        <li class="mb-3">
+                           <a href="#" class="active-page landing">
+                            <i class="far fa-file"></i>
+                            Landing page
+                           </a>
+                            
+                        </li>
+                        
+                        <li class="mb-3">
+                            <a href="#" id="album-template">
+                                <i class="far fa-folder"></i>
+                                Content</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" id="pricing-template">
+                                <i class="far fa-folder"></i>
+                                Ecommerce</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="box-drag">
+                <div class="head">
+                    <ul class="nav nav-taps  elem">
+                        <li class="nav-item text-center">
+                            <a class="nav-link active-option px-0" id="components" href="#components">
+                               <i class="fa fa-cube ml-4 mb-2 d-block"></i>
+                               Components
+                            </a>
+                        </li>    
+                        <li class="nav-item text-center ">
+                            <a class="nav-link px-0" id="blocks" data-toggle="tab" href="#blocks">
+                                <i class="far fa-image ml-2 mb-2 d-block"></i>
+                                Blocks
+                            </a>    
+                        </li>
+                        
+                    </ul>
+                    <div class="search-content">
+                        <input type="text" class="form-control form-control-sm search-component"
+                         placeholder="search component">
+                        <button class="clear">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="drag-elements">
+                        <div>
+                            <ul class="component-list">
+                                <li class="">
+                                    bootstrap 4 
+                                    <i class="fas fa-angle-down float-right px-4"></i>
+                                </li>
+                                <li class="">
+                                    Wedgets
+                                    <i class="fas fa-angle-down float-right px-4"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ <!---------------   main  ------------------>
+        <section id="main-section" class="m-auto" >              
+                    
+                   <iframe src="template.html" width="100%" height="100%"  frameborder="0"></iframe>  
+                   
+        </section>   
+        
+        <!-- right sidebar  -->
+        <section id="rightNav" > 
+            <nav class="navbar px-0 pt-0">
+        
+                <ul class="navbar-nav flex-row justify-content-between  w-100 px-0 mt-2 mt-lg-0">
+                  <li class="nav-item text-center  ">
+                    <a class="nav-link active-option" href="#contentTap"><i class="fas fa-cube  d-block  "></i> Content</a>
+                  </li>
+        
+                  <li class="nav-item text-center  ">
+                    <a class="nav-link" href="#styleTap">  <i class="far fa-image d-block   "></i> Style </a>
+                  </li>
+        
+                  <li class="nav-item  text-center ">
+                    <a class="nav-link" href="#advancedTap" ><i class="fas fa-cog  d-block"></i> Advanced </a>
+                  </li>
+                </ul>
+            </nav>
+        
+            <div id="tapBody">
+              <div id="contentTap" class="tapcontent show px-3">  </div>
+              <div id="styleTap" class="tapcontent px-3"></div>
+              <div id="advancedTap" class="tapcontent px-3"></div>
+            </div>
+        
+        
+          </section>
+          
+                 
+
+
+
+      <script src="../js/jquery-3.5.1.min.js"></script>
+      <script src="../js/popper.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="../js/editorscript.js"></script>
+      
+       
+
+    </body>
+</html>    

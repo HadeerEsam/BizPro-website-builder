@@ -11,9 +11,36 @@
 
     </head>
     <body>
+
+        <section id="support" >
+            <div class="container bg-light my-5 py-5 px-1 border border-dark rounded">
+                <div class="position-relative"><i id="close" class="far fa-times-circle "></i></div>
+                
+                <h2 class="text-center py-3 text-danger  ">Getting Started</h2>
+                <ol class="mt-5">
+                    <li class="mb-2">Click on <img src="../images/pen.PNG" class="mx-2" width="35px" alt="editor icon"> at left handside.</li>
+                    <li class="mb-2">Press and hold <strong>Shift</strong> button to know editable sections.</li>
+                    <li class="mb-2">Each block of content on the page can be dragged to a new location (text , images , videos ,...etc).</li>
+                    <li class="mb-2">If you want to drag a <strong>list</strong> or <strong>table</strong> then click and hold a child item or row. Continue to hold until the helper title changes to list or table.</li>
+                    <li class="mb-2">To resize an image or video, click and hold in any corner then drag to adjust the size as required.</li>
+                    <li class="mb-2">Click on tag name at inspector bar <img src="../images/edits bar.PNG" height="30px" alt="inspector bar">.</li>
+                    <li class="mb-3">Styles (CSS classes) can be applied to an element by selecting from a list presented in the properties dialog's style tab. 
+                        <img src="../images/properties-dialog-styles-tab.png" class="w-50 m-auto d-block pt-3" alt="properties-dialog-styles-tab">
+                    </li>
+                    <li class="mb-3">You can add any number of attributes by specifying a list of name value pairs then press <strong>Enter</strong> .
+                        <img src="../images/properties-dialog-attributes-tab.png" class="w-50 m-auto d-block pt-3" alt="properties-dialog-attributes-tab">
+                    </li>
+                    <li>If you absolutely need to change the content of an element at the HTML level, that's possible too. The last tab in the properties dialog allows you to view the inner HTML code of the selected element and update it directly.
+                        <img src="../images/properties-dialog-code-tab.png" class="w-50 m-auto d-block pt-3" alt="properties-dialog-code-tab">
+                    </li>
+                </ol>
+                
+            </div>
+
+        </section>
     <!-- nav bar -->
         <section id="nav" >
-            <nav class="py-1 header navbar navbar-expand-md navbar-light bg-light border-bottom">
+            <nav class="py-0 navbar navbar-expand-md navbar-light bg-light border-bottom">
               <a class="navbar-brand" href="../mySites.html"><img src="../images/logo.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,18 +48,50 @@
               </button>
         
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a id="fullscreen" class="nav-link" href="#"><img src="../images/icons8-toggle-full-screen-26.png" alt="">
-                        <span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav  mr-auto">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="far fa-folder-open  fa-2x  "></i>
+                        </a>
+                          <div class="items dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ol>
+                                <li class="dropdown-item">
+                                    <a href="#" id="firstTemplate" > 
+                                         <i class="far fa-file"></i>
+                                        Jumbotron                               
+                                    </a>
+                                    
+                                </li>
+                                <li class="dropdown-item">
+                                   <a href="#" class="active-page landing">
+                                    <i class="far fa-file"></i>
+                                    Landing page
+                                   </a>
+                                    
+                                </li>
+                                
+                                <li class="dropdown-item">
+                                    <a href="#" id="album-template">
+                                        <i class="far fa-folder"></i>
+                                        Content</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" id="pricing-template">
+                                        <i class="far fa-folder"></i>
+                                        Ecommerce</a>
+                                </li>
+                            </ol>
+                        </div>
+                      </li>
+                      
+                  <li class="nav-item ">
+                    <a id="fullscreen" class="nav-link" href="#"><img src="../images/icons8-toggle-full-screen-26.png" alt=""></a>
                   </li>
-                  <li class="nav-item">
-                    <a id="hideLeftNav" class="nav-link " href="#"><img src="../images/icons8-switch-on-32 (3).png" alt=""></a>
+                  <li class="nav-item ">
+                    <a id="help" class="nav-link" href="#support"><i class="far fa-question-circle  text-danger fa-lg py-2  "></i></a>
                   </li>
-                  <li class="nav-item">
-                    <a id="hideRightNav" class="nav-link" href="#"><img src="../images/icons8-switch-on-32 (2).png" alt=""></a>
-        
                 </ul>
+
                 
                 <ul class="navbar-nav ml-auto pr-5">
                   <li class="nav-item active">
@@ -51,54 +110,13 @@
             </nav>
         </section>
         
-        <!-- left sidebar -->
-        <section id="left-side" >
-            <div class="box-side">
-                <div class="head">
-                    <a href="#" class="link-text">pages</a>
-                    <div class="btn-item float-right mr-2">
-                        <a href="#" class="btn  btn-sm pt-1">
-                            <i class="far fa-file"></i>
-                            <small>New page</small>
-                        </a>
-                    </div>
-                </div>
-                <div class="items">
-                    <ol>
-                        <li class="mb-3">
-                            <a href="#" id="firstTemplate" > 
-                                 <i class="far fa-file"></i>
-                                Jumbotron                               
-                            </a>
-                            
-                        </li>
-                        <li class="mb-3">
-                           <a href="#" class="active-page landing">
-                            <i class="far fa-file"></i>
-                            Landing page
-                           </a>
-                            
-                        </li>
-                        
-                        <li class="mb-3">
-                            <a href="#" id="album-template">
-                                <i class="far fa-folder"></i>
-                                Content</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" id="pricing-template">
-                                <i class="far fa-folder"></i>
-                                Ecommerce</a>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            
-        </section>
+
+       
+       
  <!---------------   main  ------------------>
-        <section id="main-section" class="m-auto" >              
+        <section id="main-section" class="m-auto " >              
                     
-                   <iframe src="template.html" width="100%" height="100%"  frameborder="0"></iframe>  
+                   <iframe src="template.html" width="100%" height="92%"  frameborder="0"></iframe>  
                    
         </section>   
         

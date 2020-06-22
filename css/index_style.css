@@ -67,7 +67,7 @@ h3{
     height: 100%;
     position: absolute;
     top:-99%;
-    
+    z-index: -1;
 }
 .stunning-templates::after {
     content: " ";
@@ -79,6 +79,7 @@ h3{
     height: 100%;
     position: absolute;
     top:55%;
+    z-index: -1;
    
 }
 
@@ -93,8 +94,7 @@ h3{
     height: 100%;
     position: absolute;
     top:-99%;
-    
-
+    z-index: -1;
 }
 .mobile::after{
 
@@ -107,7 +107,7 @@ h3{
     height: 100%;
     position: absolute;
     top:55%;
-    
+    z-index: -1;    
 } 
 
 

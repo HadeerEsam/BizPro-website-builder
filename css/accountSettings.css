@@ -83,7 +83,7 @@ body
     left: 0;
     bottom: 0;
     z-index:1000 ;
-    width: 160px;
+    width: 190px;
     background-color: white;
     box-shadow: 1px 1px 15px rgba(39, 39, 39, 0.459);
     display: block;
@@ -115,7 +115,7 @@ body
     font-size: 10px;
 }
 .main-settings{
-    margin-left: 9rem;
+    margin-left: 12rem;
 }
 .frame{
     width: 85%;
@@ -133,10 +133,10 @@ body
 @media screen and (min-width:992px){
 
     .setting-options{
-        width: 220px;
+        width: 265px;
     }
     .main-settings{
-        margin-left: 13rem;
+        margin-left: 16rem;
     }
     #userEmail{
         font-size: 14px;

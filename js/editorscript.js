@@ -115,10 +115,10 @@ $("#fullscreen").click(function(){
         // documentation of editor 
 
         $("#help").click(function(){
-            $("#support").css("display","block");
+            $("#support").show(500);
         });
         $("#close").click(function(){
-            $("#support").css("display","none");
+            $("#support").hide(500);;
         });
     });
     
